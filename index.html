@@ -4,10 +4,112 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Document</title>
+        <link rel="stylesheet" href="../portfolio/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <title>Portfolio</title>
+    <style>
+     header{
+             background-color:yellowgreen;
+             height:35px;
+             display:flex;
+             color:white;
+             justify-content:space-evenly;
+             Font-size:18px;
+             Padding-top:12px;
+             opacity:1;
+     }
+     header:hover{
+        opacity:0.8;
+     }
+     .title span{
+      margin-right:15px;
+     }
+     .basic{
+        text-align:center;
+        font-size:18px;
+        color:darkblue;
+        Padding-left:300px;
+        padding-right:300px;
+     }
+     #a{
+        font-size:20px;
+        font-weight: bold;
+        text-decoration: underline;
+     }
+     .container{
+        display:grid;
+        grid-template-columns: 6fr 6fr;
+        margin-top:57px;
+        margin-left:150px;
+     }
+.my-photo{
+    width:350px;
+    height:350px;
+    overflow: hidden;
+    position:relative;
+}
+.my-photo img{
+    transform: translate(0px);
+    transition:3s;
+}
+ .my-photo :hover {
+    transform: translate(5px);
+    transition:1s;
+    width:360px;
+    
+}
+
+.data{
+    margin-left:-150px;
+}
+     .data-title{
+        font-size:20px;
+        font-weight:bold;
+        text-decoration: underline ;
+     }
+     .data-des{
+        font-size:17px;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding-top: 20px;
+     }
+     
+    </style>
 </head>
 <body>
-    <h1> My Portfolio</h1>
-    df
+    <header>
+      <div>
+        MyPortfolio
+      </div>
+      <div class="title">
+        <span>Home</span>
+        <span>About</span>
+        <span>Pages</span>
+        <span>Blog</span>
+        <span>Contact</span>
+      </div>
+    </header>
+   <div class="basic">
+        <p id="a">ABOUT ME</p>
+        <P>I am P.Krupavani an UI Full Stack Web Developer learning fresher who is trying to seek a role to enhance and explore my technical knowledge in your company.</P>
+   </div>
+<div class="container">
+    <div class="my-photo">
+    <img src="public/images/photo.jpg" height="100%" width="100%">
+    </div>
+  <div class="data">
+        <div class="data-title">Educational Qualifications:</div>
+        <div class="data-des">
+        <ul>
+        <li>Msc(cs)-2022 from Kasturbha Gandhi Degree and Pg College for women</li>
+        <li>Bsc(Honors)-2019 from St.Francis College for Women</li>
+        <li>Intermediate-2016 from Sri Gayatri inter college forr women</li>
+        </ul>
+    </div>
+    <div class="w3-border">
+
+      </div>      
+</div>
+</div>
 </body>
 </html>
